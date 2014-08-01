@@ -1,0 +1,26 @@
+BasementBand v0.0.0
+BasementBand -> InternalMicrophone
+             -> IncreaseVolumeEffect
+             -> InternalSpeakers
+
+
+BasementBand v0.0.3
+BasementBand -> (Interface)InputDevice
+             -> (Interface)Effect
+             -> (Interface)OutputDevice
+CompositeEffect      -> Effect
+--------------------------------------------
+
+LoopEffect           -> Effect
+IncreaseVolumeEffect -> Effect
+Reverb               -> Effect
+Echo
+Delay
+AmpModel
+Eq
+
+
+Inputdevices
+InternalMicrophone
+MIDI
+ExternalMicrophone
